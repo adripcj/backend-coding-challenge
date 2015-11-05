@@ -1,2 +1,6 @@
-node_modules
-build
+src/main/resources/assets/node_modules
+src/main/resources/assets/build
+target
+.project
+.settings
+.classpath
