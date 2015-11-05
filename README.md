@@ -39,12 +39,17 @@ Feel free to comment your code, or put explanations in a pull request within the
 ##### Why doesn’t the test include X?
 Good question. Feel free to tell us how to make the test better. Or, you know, fork it and improve it!
 
-Prerequisites 
--------------
+Technologies
+------------
+1. Dropwizard Framework
+2. MySQL
+
+Prerequisites to run the application
+------------------------------------
 1. Package manager npm must be installed.
 2. Jdk 1.8
 3. Maven 3
-4. Mysql
+4. MySQL
 
 Installation Instructions
 -------------------------
