@@ -24,7 +24,7 @@ app.controller("ctrlExpenses", ["$rootScope", "$scope", "Restangular", function 
 
 	var loadExpenses = function() {
 		// Retrieve a list of expenses via REST
-		$Restangular.one("expenses").getList().then(function(expenses) {
+		$Restangular.one("api/expenses").getList().then(function(expenses) {
 			$scope.expenses = expenses;
 		});
 	}
@@ -32,7 +32,7 @@ app.controller("ctrlExpenses", ["$rootScope", "$scope", "Restangular", function 
 	$scope.saveExpense = function() {
 		if ($scope.expensesform.$valid) {
 			// Post the expense via REST
-			$Restangular.one("expenses").post(null, $scope.newExpense).then(function() {
+			$Restangular.one("api/expenses").post(null, $scope.newExpense).then(function() {
 				// Reload new expenses list
 				loadExpenses();
 			});
