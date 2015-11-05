@@ -38,3 +38,17 @@ Feel free to comment your code, or put explanations in a pull request within the
 
 ##### Why doesn’t the test include X?
 Good question. Feel free to tell us how to make the test better. Or, you know, fork it and improve it!
+
+Prerequisites 
+-------------
+1. Package manager npm must be installed.
+2. Jdk 1.8
+3. Maven 3
+
+Installation Instructions
+-------------------------
+1. Make sure you have already installed the dependencies declared in file <PROJECT_ROOT>/src/main/resources/assets/package.json. If not, install them with npm.
+2. Execute default gulp task with gulp command in directory <PROJECT_ROOT>/src/main/resources/assets. It will create build directory.
+3. Execute mvn package from the project root.
+4. In order to run the server, execute the following command from the project root: java -jar target/backend-coding-challenge-0.0.1-SNAPSHOT.jar server src/main/resources/config.yml
+5. Access to http://localhost:8080
