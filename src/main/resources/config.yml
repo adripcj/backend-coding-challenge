@@ -15,7 +15,7 @@ database:
   driverClass: com.mysql.jdbc.Driver 
   user: root
   password: root
-  url: jdbc:mysql://localhost/expenses_app
+  url: jdbc:mysql://localhost/expenses_db
 
   # any properties specific to your JDBC driver:
   properties:
